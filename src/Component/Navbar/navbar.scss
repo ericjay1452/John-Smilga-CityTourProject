@@ -1,0 +1,40 @@
+@import "../../App.scss";
+
+.header {
+    background-color:  $mainBlack;
+    padding: 1rem 2rem;
+    position:  $relative;
+    width:  $width;
+    font-family: 'Poppins', sans-serif;
+}
+.logo {
+    display:  $block;
+}
+.nav {
+    display:  grid;
+ grid-template-columns:  1fr 2fr;
+ text-align: center;
+}
+
+.list {
+    list-style-type: none;
+    display:  $flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list li {
+    position:  $relative;
+}
+
+.list-link {
+    display:  $block;
+    text-decoration: none;
+    color:  $lightWhite;
+    padding:  0.2rem 0.4rem;
+    transition:  all 0.3s linear;
+   &:hover {
+     color:  yellow;
+    }
+}

@@ -1,0 +1,57 @@
+@import "../../App.scss";
+
+.tour-article {
+    position:  $relative;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin:  0 0 1rem 0;
+    background-color:  $backgroundEffect;
+    border-radius:  0.5rem;
+
+    .img-container {
+        position: $relative;
+        display:  $block;
+    }
+    .span {
+        position: $absolute;
+        top:  2%;
+        text-align: center;
+        right:  2%;
+        cursor: pointer;
+        color:  $lightWhite;
+        display: block;
+        padding:  0.6rem;
+        transition:  all 0.3s linear;
+        opacity:  0;
+        color:  $mainBlack;
+    }
+}
+
+.img {
+    width:  100%;
+    max-width:  100%;
+    border-radius:  0.5rem;
+}
+
+.img-container:hover .span {
+    opacity: 1;
+}
+
+.DataContainer {
+    padding:  1rem;
+
+    h2 {
+        margin: 0.4rem 0;
+    } 
+}
+
+.info-close {
+    cursor: pointer;
+    .fa-times-circle {
+        padding-top:  0.5rem;
+    }
+}
+
+.para {
+    padding:  0.8rem;
+}
